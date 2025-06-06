@@ -1,0 +1,287 @@
+/* General styles */
+
+*{
+
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  font-family: poppins;
+  font-size: var(--standard-font-size);
+  font-weight: 400;
+  color: var(--white);
+  scroll-behavior: smooth;
+  transition: var(--standard-transition);
+  box-sizing: border-box;
+
+}
+
+:root{
+
+  /* Color palette */
+
+  --black: #363636;
+  --white: #e8e8e8;
+  --grey: #787878;
+  --accent-1: #df5441;
+  --accent-2: #f0a967;
+
+  /* ------------- */
+
+  /* Sizing properties*/
+
+  --standard-font-size: 1rem;
+  --gap: 2rem;
+  --padding-element: 2rem;
+
+  /* ------------- */
+
+   /* Transition properties*/
+
+  --standard-transition: all 0.20s ease;
+ 
+   /* ------------- */
+
+   /* Shadow properties*/
+
+  --card-shadow: 0px 0px 20px rgba(0,0,0,0.50);
+ 
+  /* ------------- */
+
+}
+
+.flexer{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.flexer-column{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.main-content-container{
+
+  height: 100vh;
+  width: 100%;
+  background-color: var(--white);
+  gap: var(--gap);
+
+}
+
+/* --------------------- */
+
+/* Body styles */
+
+.product-card-container{
+
+  height: auto;
+  width: auto;
+  padding: var(--padding-element);
+  border-radius: 1.5rem;
+  background-color: var(--black);
+  box-shadow: var(--card-shadow);
+
+}
+
+.product-card-container:hover{
+
+  transform: scale(110%);
+
+}
+
+.p-content-container{
+
+  height: 30rem;
+  width: 20rem;
+  border-radius: .5rem;
+  justify-content: start;
+  gap: var(--gap);
+
+}
+
+.p-card-container{
+
+  width: 100%;
+  height: auto;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  justify-content: space-between;
+
+}
+
+.p-card-container a{
+
+  color: var(--white);
+  font-size: 1.3rem;
+  padding: .1rem .5rem;
+
+}
+
+.p-image{
+
+  width: 100%;
+  height: 50%;
+  background-image: url(../Images/earbuds-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: .5rem;
+
+}
+
+.p-image:hover{
+
+  background-image: url(../Images/earbuds-2.jpg);
+  transform: rotate(3deg) scale(105%);
+
+}
+
+.p-title{
+
+  width: 100%;
+  height: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--white);
+
+}
+
+.p-title h1{
+
+  font-size: 1rem;
+  font-weight: 700;
+
+}
+
+.p-title p{
+
+  font-size: .8rem;
+
+}
+
+.p-desc{
+
+  height: 3rem;
+  width: 100%;
+  border-radius: .5rem;
+
+}
+
+.p-desc a{
+
+  color: var(--black);
+  font-weight: 700;
+  height: 100%;
+  width: 100%;
+  border-radius: .5rem;
+  background-color: var(--white);
+  border: 2px solid var(--white);
+
+}
+
+.p-desc a:hover{
+
+  background-color: var(--black);
+  color: var(--white);
+
+}
+
+
+/* Product container 2 */
+
+.p-card-2{
+
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  *{
+
+    color: var(--black);
+
+  }
+
+}
+
+.p-card-container .text-2{
+
+  color: var(--black);
+
+}
+
+.p-card-container .icon-2{
+
+  color: var(--black);
+
+}
+
+.p-title-2{
+
+  border-top: 1px solid var(--black);
+
+}
+
+.p-desc-2 .btn-2{
+
+  background-color: var(--black);
+  color: var(--white);
+  border: 2px solid var(--black);
+
+}
+
+.p-desc-2 .btn-2:hover{
+
+  background-color: var(--white);
+  color: var(--black);
+
+}
+
+/* End of Product container 2 */
+
+/* Product container 3 */
+
+.p-card-3{
+
+  background-color: var(--grey);
+
+}
+
+/* End of Product container 3 */
+
+/* --------------------- */
+
+/* End of Body styles */
+
+
+
+/* Media queries */
+
+@media(max-width: 1250px){
+
+  .main-content-container{
+
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+
+  }
+
+}
+
+@media(max-width: 500px){
+
+  .main-content-container{
+
+    padding: 2rem;
+
+  }
+
+}
+
+/* End of Media queries */
